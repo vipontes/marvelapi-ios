@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F22694B67DA36A837B9A1D /* Pods_marvelapi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC02FF2A66CCBDE42C1E9F2 /* Pods_marvelapi_iosTests.framework */; };
+		6BF0D67371D3FCC04D7578CF /* Pods_marvelapi_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2022641C4EDD44BBB63181 /* Pods_marvelapi_ios.framework */; };
+		713662581FDD72FF4784296E /* Pods_marvelapi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5545EF2B8054E0524BB2FF3 /* Pods_marvelapi_iosUITests.framework */; };
 		96421D002325978F00254B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96421CFF2325978F00254B73 /* AppDelegate.swift */; };
-		96421D022325978F00254B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96421D012325978F00254B73 /* ViewController.swift */; };
 		96421D052325978F00254B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96421D032325978F00254B73 /* Main.storyboard */; };
 		96421D072325979000254B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96421D062325979000254B73 /* Assets.xcassets */; };
 		96421D0A2325979000254B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96421D082325979000254B73 /* LaunchScreen.storyboard */; };
 		96421D152325979000254B73 /* marvelapi_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96421D142325979000254B73 /* marvelapi_iosTests.swift */; };
 		96421D202325979000254B73 /* marvelapi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96421D1F2325979000254B73 /* marvelapi_iosUITests.swift */; };
+		96562ACA2325A14900515456 /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AC92325A14900515456 /* CharacterListTableViewController.swift */; };
+		96562ACD2325A1DC00515456 /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ACC2325A1DC00515456 /* MarvelService.swift */; };
+		96562AD02325A5D500515456 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ACF2325A5D500515456 /* Thumbnail.swift */; };
+		96562AD22325A69F00515456 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AD12325A69F00515456 /* Results.swift */; };
+		96562AD42325A75F00515456 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AD32325A75F00515456 /* Data.swift */; };
+		96562AD62325A83C00515456 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AD52325A83C00515456 /* ResponseBody.swift */; };
+		96562AD82325CA4600515456 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AD72325CA4600515456 /* CharacterListViewModel.swift */; };
+		96562ADB2325CDD500515456 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ADA2325CDD500515456 /* CharacterCell.swift */; };
+		96562ADE2325D32A00515456 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ADD2325D32A00515456 /* LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		147060811235EE86B3763B53 /* Pods-marvelapi-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-marvelapi-iosTests/Pods-marvelapi-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F729A04A731D17E346F013D /* Pods-marvelapi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-marvelapi-iosUITests/Pods-marvelapi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0C214C8284300428274E79 /* Pods-marvelapi-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-ios.debug.xcconfig"; path = "Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		8369F4BB3727BCC5470B6B63 /* Pods-marvelapi-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-marvelapi-iosUITests/Pods-marvelapi-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D2022641C4EDD44BBB63181 /* Pods_marvelapi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marvelapi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC02FF2A66CCBDE42C1E9F2 /* Pods_marvelapi_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marvelapi_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96421CFC2325978F00254B73 /* marvelapi-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "marvelapi-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96421CFF2325978F00254B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96421D012325978F00254B73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96421D042325978F00254B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96421D062325979000254B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96421D092325979000254B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,18 @@
 		96421D1B2325979000254B73 /* marvelapi-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "marvelapi-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96421D1F2325979000254B73 /* marvelapi_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marvelapi_iosUITests.swift; sourceTree = "<group>"; };
 		96421D212325979000254B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96562AC92325A14900515456 /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
+		96562ACC2325A1DC00515456 /* MarvelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelService.swift; sourceTree = "<group>"; };
+		96562ACF2325A5D500515456 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		96562AD12325A69F00515456 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		96562AD32325A75F00515456 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		96562AD52325A83C00515456 /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
+		96562AD72325CA4600515456 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		96562ADA2325CDD500515456 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		96562ADD2325D32A00515456 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
+		B7C029BC737CF3BF7DC90AA0 /* Pods-marvelapi-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-iosTests.release.xcconfig"; path = "Target Support Files/Pods-marvelapi-iosTests/Pods-marvelapi-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBADEDDD71CF4D9012D2ACA6 /* Pods-marvelapi-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-ios.release.xcconfig"; path = "Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F5545EF2B8054E0524BB2FF3 /* Pods_marvelapi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marvelapi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF0D67371D3FCC04D7578CF /* Pods_marvelapi_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F22694B67DA36A837B9A1D /* Pods_marvelapi_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713662581FDD72FF4784296E /* Pods_marvelapi_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16891A8922FCDB4B72ED5A9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C214C8284300428274E79 /* Pods-marvelapi-ios.debug.xcconfig */,
+				DBADEDDD71CF4D9012D2ACA6 /* Pods-marvelapi-ios.release.xcconfig */,
+				147060811235EE86B3763B53 /* Pods-marvelapi-iosTests.debug.xcconfig */,
+				B7C029BC737CF3BF7DC90AA0 /* Pods-marvelapi-iosTests.release.xcconfig */,
+				1F729A04A731D17E346F013D /* Pods-marvelapi-iosUITests.debug.xcconfig */,
+				8369F4BB3727BCC5470B6B63 /* Pods-marvelapi-iosUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D20CA912F516038686D12A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D2022641C4EDD44BBB63181 /* Pods_marvelapi_ios.framework */,
+				8FC02FF2A66CCBDE42C1E9F2 /* Pods_marvelapi_iosTests.framework */,
+				F5545EF2B8054E0524BB2FF3 /* Pods_marvelapi_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96421CF32325978F00254B73 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +135,8 @@
 				96421D132325979000254B73 /* marvelapi-iosTests */,
 				96421D1E2325979000254B73 /* marvelapi-iosUITests */,
 				96421CFD2325978F00254B73 /* Products */,
+				16891A8922FCDB4B72ED5A9A /* Pods */,
+				6D20CA912F516038686D12A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +153,13 @@
 		96421CFE2325978F00254B73 /* marvelapi-ios */ = {
 			isa = PBXGroup;
 			children = (
+				96562ADC2325D30A00515456 /* Extensions */,
+				96562AD92325CDBF00515456 /* CustomCells */,
+				96562ACE2325A57200515456 /* Model */,
+				96562ACB2325A1BE00515456 /* Services */,
+				96562AC62325A0C200515456 /* ViewModel */,
+				96562AC52325A0B900515456 /* Controllers */,
 				96421CFF2325978F00254B73 /* AppDelegate.swift */,
-				96421D012325978F00254B73 /* ViewController.swift */,
 				96421D032325978F00254B73 /* Main.storyboard */,
 				96421D062325979000254B73 /* Assets.xcassets */,
 				96421D082325979000254B73 /* LaunchScreen.storyboard */,
@@ -125,6 +186,57 @@
 			path = "marvelapi-iosUITests";
 			sourceTree = "<group>";
 		};
+		96562AC52325A0B900515456 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96562AC92325A14900515456 /* CharacterListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		96562AC62325A0C200515456 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96562AD72325CA4600515456 /* CharacterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96562ACB2325A1BE00515456 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96562ACC2325A1DC00515456 /* MarvelService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96562ACE2325A57200515456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96562ACF2325A5D500515456 /* Thumbnail.swift */,
+				96562AD12325A69F00515456 /* Results.swift */,
+				96562AD32325A75F00515456 /* Data.swift */,
+				96562AD52325A83C00515456 /* ResponseBody.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96562AD92325CDBF00515456 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				96562ADA2325CDD500515456 /* CharacterCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		96562ADC2325D30A00515456 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96562ADD2325D32A00515456 /* LoadImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96421D242325979000254B73 /* Build configuration list for PBXNativeTarget "marvelapi-ios" */;
 			buildPhases = (
+				7E2242D58454E3D3C595A9BD /* [CP] Check Pods Manifest.lock */,
 				96421CF82325978F00254B73 /* Sources */,
 				96421CF92325978F00254B73 /* Frameworks */,
 				96421CFA2325978F00254B73 /* Resources */,
+				857ACF3507864D884A65C39D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96421D272325979000254B73 /* Build configuration list for PBXNativeTarget "marvelapi-iosTests" */;
 			buildPhases = (
+				13A462232AB3F7693E510FDB /* [CP] Check Pods Manifest.lock */,
 				96421D0C2325979000254B73 /* Sources */,
 				96421D0D2325979000254B73 /* Frameworks */,
 				96421D0E2325979000254B73 /* Resources */,
@@ -167,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96421D2A2325979000254B73 /* Build configuration list for PBXNativeTarget "marvelapi-iosUITests" */;
 			buildPhases = (
+				BAC38C7996E9FF2A69FF259E /* [CP] Check Pods Manifest.lock */,
 				96421D172325979000254B73 /* Sources */,
 				96421D182325979000254B73 /* Frameworks */,
 				96421D192325979000254B73 /* Resources */,
@@ -251,13 +367,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13A462232AB3F7693E510FDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marvelapi-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E2242D58454E3D3C595A9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marvelapi-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		857ACF3507864D884A65C39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC38C7996E9FF2A69FF259E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marvelapi-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96421CF82325978F00254B73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96421D022325978F00254B73 /* ViewController.swift in Sources */,
+				96562AD62325A83C00515456 /* ResponseBody.swift in Sources */,
+				96562ADE2325D32A00515456 /* LoadImage.swift in Sources */,
 				96421D002325978F00254B73 /* AppDelegate.swift in Sources */,
+				96562AD42325A75F00515456 /* Data.swift in Sources */,
+				96562ADB2325CDD500515456 /* CharacterCell.swift in Sources */,
+				96562ACD2325A1DC00515456 /* MarvelService.swift in Sources */,
+				96562AD82325CA4600515456 /* CharacterListViewModel.swift in Sources */,
+				96562AD02325A5D500515456 /* Thumbnail.swift in Sources */,
+				96562ACA2325A14900515456 /* CharacterListTableViewController.swift in Sources */,
+				96562AD22325A69F00515456 /* Results.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +640,7 @@
 		};
 		96421D252325979000254B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0C214C8284300428274E79 /* Pods-marvelapi-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +659,7 @@
 		};
 		96421D262325979000254B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBADEDDD71CF4D9012D2ACA6 /* Pods-marvelapi-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +678,7 @@
 		};
 		96421D282325979000254B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147060811235EE86B3763B53 /* Pods-marvelapi-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +700,7 @@
 		};
 		96421D292325979000254B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C029BC737CF3BF7DC90AA0 /* Pods-marvelapi-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +722,7 @@
 		};
 		96421D2B2325979000254B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F729A04A731D17E346F013D /* Pods-marvelapi-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +743,7 @@
 		};
 		96421D2C2325979000254B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8369F4BB3727BCC5470B6B63 /* Pods-marvelapi-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

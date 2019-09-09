@@ -1,0 +1,6 @@
+framework module Pods_marvelapi_ios {
+  umbrella header "Pods-marvelapi-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

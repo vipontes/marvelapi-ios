@@ -25,6 +25,8 @@
 		96562AD82325CA4600515456 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562AD72325CA4600515456 /* CharacterListViewModel.swift */; };
 		96562ADB2325CDD500515456 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ADA2325CDD500515456 /* CharacterCell.swift */; };
 		96562ADE2325D32A00515456 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96562ADD2325D32A00515456 /* LoadImage.swift */; };
+		96F8BC632326A9AE00C55BD4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8BC622326A9AE00C55BD4 /* DetailViewController.swift */; };
+		96F8BC662326AC6400C55BD4 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8BC652326AC6400C55BD4 /* AnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		96562AD72325CA4600515456 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		96562ADA2325CDD500515456 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		96562ADD2325D32A00515456 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
+		96F8BC622326A9AE00C55BD4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96F8BC652326AC6400C55BD4 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		B7C029BC737CF3BF7DC90AA0 /* Pods-marvelapi-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-iosTests.release.xcconfig"; path = "Target Support Files/Pods-marvelapi-iosTests/Pods-marvelapi-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBADEDDD71CF4D9012D2ACA6 /* Pods-marvelapi-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marvelapi-ios.release.xcconfig"; path = "Target Support Files/Pods-marvelapi-ios/Pods-marvelapi-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F5545EF2B8054E0524BB2FF3 /* Pods_marvelapi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marvelapi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,12 +157,13 @@
 		96421CFE2325978F00254B73 /* marvelapi-ios */ = {
 			isa = PBXGroup;
 			children = (
-				96562ADC2325D30A00515456 /* Extensions */,
+				96F8BC642326AC1500C55BD4 /* Animation */,
 				96562AD92325CDBF00515456 /* CustomCells */,
 				96562ACE2325A57200515456 /* Model */,
-				96562ACB2325A1BE00515456 /* Services */,
 				96562AC62325A0C200515456 /* ViewModel */,
 				96562AC52325A0B900515456 /* Controllers */,
+				96562ADC2325D30A00515456 /* Extensions */,
+				96562ACB2325A1BE00515456 /* Services */,
 				96421CFF2325978F00254B73 /* AppDelegate.swift */,
 				96421D032325978F00254B73 /* Main.storyboard */,
 				96421D062325979000254B73 /* Assets.xcassets */,
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				96562AC92325A14900515456 /* CharacterListTableViewController.swift */,
+				96F8BC622326A9AE00C55BD4 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +241,14 @@
 				96562ADD2325D32A00515456 /* LoadImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96F8BC642326AC1500C55BD4 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				96F8BC652326AC6400C55BD4 /* AnimationController.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +472,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F8BC662326AC6400C55BD4 /* AnimationController.swift in Sources */,
+				96F8BC632326A9AE00C55BD4 /* DetailViewController.swift in Sources */,
 				96562AD62325A83C00515456 /* ResponseBody.swift in Sources */,
 				96562ADE2325D32A00515456 /* LoadImage.swift in Sources */,
 				96421D002325978F00254B73 /* AppDelegate.swift in Sources */,
